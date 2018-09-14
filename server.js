@@ -5,12 +5,12 @@ const genres = require('./seedData');
 
 app.get('/', (req, res) =>{
     res.json(genres)
-})
+});
 
 app.get('/:genre', (req, res, next) =>{
     let genre = req.params.genre;
     res.json(genres[genre].title)
-})
+});
 
 app.get('/shows/episodes/:genre', (req, res) =>{
     let genre = req.params.genre;
@@ -20,9 +20,9 @@ app.get('/shows/episodes/:genre', (req, res) =>{
         if(show.genre == genre){
             showList.push(show)
         }
-    })
+    });
     res.json(showList);
-})
+});
 
 
 
