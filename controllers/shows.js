@@ -1,5 +1,4 @@
 const showsRouter = require('express').Router();
-const episodesRouter = require('./episodes').Router();
 
 const shows = require('../seedData');
 
@@ -17,9 +16,10 @@ showsRouter.get('/:id', (req, res) =>{
     }
 });
 
+const episodes = require('./episodes');
 showsRouter.use('/:id/episodes', (req, res, next) => {
   req.showsId = req.params.id;
   next();
-}, episodesRouter);
+}, episodes);
 
 module.exports = showsRouter

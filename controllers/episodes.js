@@ -1,20 +1,21 @@
-const episodesRouter = require('express').Router();
+const episodes = require('express').Router();
 const shows = require('../seedData');
-// The root router for requests to our tracks path
-track.get('/', function(req, res, next) {
-  let showsId = req.params.id; // Our problem line
 
-  // retrieve album's track data and render track list page
-});
+episodes.get('/', function(req, res, next) {
 
-// The route for handling a request to a specific track
-track.get('/:id', function(req, res, next) {
-  let showsId = req.params.id; // <-- How do we get this?
-  let episodesId = req.params.id;
-
-  // retrieve individual track data and render on single track page
+  let _id = req.showsId;
+  for (var i = 0; i < shows.length; i++) {
+    if (_id === shows[i].id) {
+      res.json(shows[i].episodes)
+    }
+  }
 });
 
 
+episodes.get('/:id', function(req, res, next) {
+  console.log('Something else...')
+});
 
-module.exports = episodesRouter;
+
+
+module.exports = episodes;
