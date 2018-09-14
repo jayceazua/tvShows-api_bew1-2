@@ -3,32 +3,32 @@
 const shows = [
    {
        id: 1,
-       title: "Gone With The Wind",
+       title: "Mr. Robot",
        genre: 1,
-       genreTitle: "Romance",
+       genreTitle: "technology drama",
        episodes: [
            "pilot",
-           "ricklantis"
+           "hackathon"
        ]
    },
    {
        id: 2,
-       title: "He Won my Heart",
+       title: "Marco Polo",
        genre: 2,
        genreTitle: "Romance",
        episodes: [
            "pilot",
-           "ricklantis"
+           "khan"
        ]
    },
    {
        id: 3,
-       title: "Zombie High School",
+       title: "Shameless",
        genre: 1,
-       genreTitle: "Horror",
+       genreTitle: "drama",
        episodes: [
            "pilot",
-           "ricklantis"
+           "some shit"
        ]
    },
    {
@@ -43,44 +43,14 @@ const shows = [
    },
    {
        id: 5,
-       title: "Superman",
+       title: "Gotham",
        genre: 0,
        genreTitle: "Action",
        episodes: [
            "pilot",
-           "ricklantis"
+           "arkham"
        ]
-   },
-   {
-       id: 6,
-       title: "Wonder Woman",
-       genre: 1,
-       genreTitle: "Action",
-       episodes: [
-           "pilot",
-           "ricklantis"
-       ]
-   },
-   {
-       id: 7,
-       title: "Jokes on You",
-       genre: 3,
-       genreTitle: "Comedy",
-       episodes: [
-           "pilot",
-           "ricklantis"
-       ]
-   },
-   {
-       id: 8,
-       title: "Sally Met Harry",
-       genre: 1,
-       genreTitle: "Comedy",
-       episodes: [
-           "pilot",
-           "ricklantis"
-       ]
-   },
+   }
 ]
 
 
