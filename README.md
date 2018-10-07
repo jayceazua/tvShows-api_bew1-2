@@ -17,8 +17,8 @@ Followed instructions from the [BEW1_2 Repo](https://github.com/Product-College-
 - [Article](https://medium.com/@zachcaceres/child-routers-in-express-56f904597b1b) to read.
 - Within the main resource route file next.
 This allows to pass the mainResource's `:id` into the subResource route:
-`const subResource = require('./subResource');
+```const subResource = require('./subResource');
 mainResource.use('/:id/subResource', (req, res, next) => {
   req.showsId = req.params.id;
   next();
-}, subResource);`
+}, subResource);```
