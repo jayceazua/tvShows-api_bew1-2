@@ -12,3 +12,5 @@ Followed instructions from the [BEW1_2 Repo](https://github.com/Product-College-
 - JavaScript (ES6) w/ AirBnB Style Guide
 - Node v10.11.0
 - Express v4.16.3
+
+#### Notes:
