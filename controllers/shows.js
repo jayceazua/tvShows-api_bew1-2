@@ -9,7 +9,7 @@ showsRouter.get('/', (req, res) =>{
 
 showsRouter.get('/:id', (req, res) =>{
     let _id = req.params.id;
-    for (var i = 0; i < shows.length; i++) {
+    for (let i = 0; i < shows.length; i++) {
       if (_id === shows[i].id) {
         res.json(shows[i])
       }
